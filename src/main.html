@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Room13</title>
+</head>
+<body>
+    <!-- CONNECTION TO THE SERVER & INCLUDES -->
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="socket.io.js"></script>
+    <script type="text/javascript" src="client.js"></script>
+    <script type="text/javascript">begin()</script>
+
+    <div class="container-fluid bgmain " id="container" style="visibility: visible">
+
+    <div class="row">
+        <div class="col">.</div>
+        <div class="col">
+            <!-- CLUE N°4 -->
+            <!-- Trigger the Modal -->
+            <img class="clue4 hideME" id="myImg4" src="../banq_img/loupe.png" alt="Clue" style="width:100%;max-width:50px">
+            <!-- The Modal-->
+            <div id="myModal4" class="modal4">
+                <!-- The Close Button-->
+                <span class="close4">&times;</span>
+                <!-- Modal Content (The Image)-->
+                <img class="modal-content4" id="img04">
+                <!-- Modal Caption (Image Text)-->
+                <div id="caption4"></div>
+            </div>
+        </div>
+        <div class="col">.</div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <!-- CLUE N°2 -->
+            <!-- Trigger the Modal -->
+            <img class="float-left vert-cent hideME" id="myImg2" src="../banq_img/loupe.png" alt="Clue" style="width:100%;max-width:50px">
+            <!-- The Modal-->
+            <div id="myModal2" class="modal2">
+                <!-- The Close Button-->
+                <span class="close2">&times;</span>
+                <!-- Modal Content (The Image)-->
+                <img class="modal-content2" id="img02">
+                <!-- Modal Caption (Image Text)-->
+                <div id="caption2"></div>
+            </div>
+        </div>
+        <div class="col vert-cent">
+            <!-- CLUE N°1 -->
+            <!-- Trigger the Modal -->
+            <img class="hideME" id="myImg" src="../banq_img/loupe.png" alt="Clue" style="width:100%;max-width:50px">
+            <!-- The Modal-->
+            <div id="myModal" class="modal">
+                <!-- The Close Button-->
+                <span class="close">&times;</span>
+                <!-- Modal Content (The Image)-->
+                <img class="modal-content3" id="img01">
+                <!-- Modal Caption (Image Text)-->
+                <div id="caption"></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <button onclick="display_chest();" class="btn btn-dark btn_right vert-cent hideME" id="btn_right" style="visibility: visible"><h1> > </h1></button>
+        </div>
+    </div>
+    <div class="row fixed-bottom">
+        <div class="col-8">
+            <!-- CLUE N°5 -->
+            <!-- Trigger the Modal -->
+            <img class="clue5 hideME" id="myImg5" src="../banq_img/loupe.png" alt="Clue" style="width:100%;max-width:50px">
+            <!-- The Modal-->
+            <div id="myModal5" class="modal5">
+                <!-- The Close Button-->
+                <span class="close3">&times;</span>
+                <!-- Modal Content (The Image)-->
+                <img class="modal-content" id="img05">
+                <!-- Modal Caption (Image Text)-->
+                <div id="caption5"></div>
+            </div>
+        </div>
+        <div class="col-4 right">
+            <!-- CLUE N°3 -->
+            <!-- Trigger the Modal -->
+            <img class="clue3 hideME" id="myImg3" src="../banq_img/loupe.png" alt="Clue" style="width:100%;max-width:50px">
+            <!-- The Modal-->
+            <div id="myModal3" class="modal3">
+                <!-- The Close Button-->
+                <span class="close3">&times;</span>
+                <!-- Modal Content (The Image)-->
+                <img class="modal-content" id="img03">
+                <!-- Modal Caption (Image Text)-->
+                <div id="caption3"></div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="clue.js"></script>
+    <script src="clue2.js"></script>
+    <script src="clue3.js"></script>
+    <script src="clue4.js"></script>
+    <script src="clue5.js"></script>
+
+
+
+
+
+
+</body>
+</html>
